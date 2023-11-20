@@ -1,0 +1,73 @@
+
+.para{
+    top: 5px;
+    font-family: 'Merriweather', serif;
+
+    position: absolute;
+    font-size: 20px;
+    color:chartreuse;
+    padding-left: 700px;
+    
+
+}
+
+.about_profile img{
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    
+    object-fit: cover;
+    top: 100px;
+    margin-left: 80px;
+    position: fixed;
+   
+}
+.para span{
+    font-size: larger;
+    font-family:'Times New Roman', Times, serif;
+}
+
+ .backimg{
+    top: -10px;
+    left: -10px;
+    width: 99vw;
+    position: fixed;
+    height: 100vh;
+    object-fit: cover;
+    
+    filter: blur(20px);
+    
+}
+.social_icons {
+    top: 600px;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+   
+    justify-content: center;
+    display: flex;
+    
+    width: 45%;
+    left: -5px;
+
+
+    /* width: 100%; */
+}
+
+.social_icons div a {
+    color: chartreuse;
+    text-decoration: none;
+    font-size: 30px;
+    margin: 30px;
+
+}
+.social_icons a:hover {
+    transform: translateY(-5px);
+    font-size: 35px;
+    /* box-shadow: -2px -2px 5px cyan; */
+    text-decoration: underline chartreuse 1px;
+    text-underline-offset: 10px;
+}
+
+

@@ -1,0 +1,327 @@
+* {
+    font-family: 'Poppins', sans-serif;
+
+
+}
+span{
+    font-weight: bold;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    max-width:100%;
+    position: relative;
+    background-color: rgb(217, 237, 250);
+}
+
+/* .bottom_container {
+    top: 0%;
+    width: 100%;
+    height: 300px;
+    background-color: rgb(217, 237, 250);
+} */
+
+.main_header {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: content-box;
+    height: 1100px;
+    /* background-color: rgb(217, 237, 250); */
+}
+
+.name {
+    margin-top: 100px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#krishna {
+    font-size: 80px;
+}
+
+#krishna::first-letter{
+    font-size: larger;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    text-shadow: 2px 3px 5px royalblue;
+}
+
+.profile_photo div {
+    width: 30%;
+    height: 30%;
+    top: 380px;
+    box-sizing: content-box;
+    border-radius: 20px;
+    background-position: relative;
+    background-image: url("krishna\ photo\ 1.png");
+    background-size: cover;
+    position: absolute;
+    left: 36%;
+
+    
+}
+/* @media ( max-width:600px){
+    body{
+        width:100%;  
+        justify-content: start;
+    }
+    .main_header{
+        width:50%;
+        position: relative;
+    }
+    .name h4,h1{
+        font-size: 30%;
+    }
+
+    .profile_photo div{
+        left:20px;
+        width:100%;
+        height: 300px;
+        display: flex;
+        justify-content: start;
+        position: absolute;
+    }
+} */
+
+
+.header {
+    font-size: 20px;
+    color: darkslategray;
+    text-align: center;
+    padding: 20px;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    /* width:100%; */
+    grid-gap: 50px;
+
+}
+
+#home:hover {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    cursor: pointer;
+}
+
+#about:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    text-underline-offset: 3px;
+}
+
+#contact:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    text-underline-offset: 3px;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+
+}
+
+section {
+    /* width:100%; */
+    margin: 20px;
+    padding: 20px;
+
+}
+
+.social_icons {
+    background-color: #34495e;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    justify-content: center;
+    display: flex;
+    height: auto;
+
+
+    /* width: 100%; */
+}
+
+.social_icons div a {
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    margin: 30px;
+
+}
+
+#introduction {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0px;
+    box-sizing: content-box;
+    top: 0;
+    max-width:100%;
+    position: relative;
+    background-color: white;
+
+}
+/* @media (max-width:1246px) {
+    
+    #krishna{
+        justify-self: center;
+    }
+    .profile_photo div{
+        max-width: 300px;
+        max-height: 300px;
+        margin-bottom: 40px;
+        transform: translateX(-20px);
+    }
+    #introduction{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .main_header{
+        height: auto;
+    }
+} */
+
+#introduction div {
+    height: 400px;
+    border: 5px solid rgb(217, 237, 250);
+    border-radius: 2px;
+    width: 300px;
+
+    padding: 8px;
+    overflow: scroll;
+    border-radius: 35px;
+    box-shadow: 5px -5px 2px grey;
+    transition: background-color 0.4s;
+    transition-delay: 0;
+    transform: translateY(-80px);
+    transition-timing-function: ease-in;
+    /* animation-name: hoversetting; */
+}
+
+#introduction div::-webkit-scrollbar {
+    width: 0;
+    /* Adjust the width as needed */
+}
+
+/* .project,
+.training {
+    margin-top: 68px;
+} */
+
+
+#introduction div:hover {
+    background-color: rgb(217, 237, 250);
+    font-weight: bold;
+    box-shadow: 3px 3px rgb(217, 237, 250), -1em 0 .4em grey;
+
+}
+
+
+
+#introduction div:hover h1 {
+    transform: translateY(-10px);
+    transition: transform 1s;
+}
+
+#introduction h1 {
+    text-align: center;
+}
+
+.social_icons a:hover {
+    transform: translateY(-5px);
+    font-size: 35px;
+    /* box-shadow: -2px -2px 5px cyan; */
+    text-decoration: underline cyan 1px;
+    text-underline-offset: 10px;
+}
+.bottom_container{
+    transform: translateY(-93px);
+}
+/* IPhone SE */
+/* @media (max-width:376px){
+    .header{
+        
+        grid-template-columns: 15vh 15vh 15vh;
+    }
+    /* .main_header{
+        width: 100vh;
+    }
+    .footer{
+        display: block;
+        bottom: 10vh;
+        width: 100vh;
+       
+    }
+    .social_icons{
+        bottom: -100vh;
+        position: relative;
+        display: flex;
+        height: auto;
+        
+    }
+    .header div{
+        
+        left: 10vh;
+        width: 10vh;
+    }
+    .profile_photo{
+        width: 20vh;
+        height: 20vh;
+        left: 10px;
+        top:auto;
+       
+        position: absolute;
+    }
+    
+    .profile_photo div{
+        width: 80vh;
+        top:auto;
+        left: 9%;
+        position: absolute;
+    }
+    #edu{
+        width:auto
+    }
+
+    #introduction{
+        
+        margin-top: 10px;
+        grid-gap: 20px;
+        position: relative;
+        top: 65vh;
+        padding-left: 0px;
+        display: flex;
+        flex-direction: column;
+       
+    }
+}  */
+/* @media screen and (min-width:377px) and (max-width:550px) {
+    .header{
+        grid-template-columns: 100px 100px 100px;
+        grid-gap: 20px;
+    }
+    .profile_photo{
+       position: absolute; 
+        width: 7%;
+        height: 4%;
+    }
+    .profile_photo div{
+      
+        left: 50%;
+    }
+    #introduction{
+        top:100vh;
+        position: absolute;
+        grid-gap: 20px;
+    }
+    .social_icons{
+        bottom: -100vh;
+    }
+} */
+
+
